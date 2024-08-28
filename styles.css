@@ -1,0 +1,69 @@
+/* styles.css */
+
+/* Full-page background with SVG */
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/navbar-project/cxp/cxp/assets/floor_bg_1.jpg') no-repeat center center;
+    background-size: cover; /* Adjust this to fit your SVG image */
+    opacity: 1; /* Fully opaque */
+    z-index: -1; /* Send background behind other elements */
+}
+
+/* SVG Layer Group */
+.svg-layer-nttdata-logo {
+    position: absolute;
+    left: 65px;
+    top: 40px;
+    width: 390px;
+    height: 40px;
+    opacity: 1; /* Fully opaque */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-image-nttdata-logo {
+    width: 100%; /* Scales the SVG to fit the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Shape layer icon: Rectangle */
+.rectangle {
+    position: absolute;
+    left: 1,755px;
+    top: 0;
+    width: 165px;
+    height: 1,080px;
+    background-color: #000000;
+    opacity: 0.7; /* 70% */
+}
+
+/* Buttons container */
+#button-container {
+    position: absolute;
+    right: 0; /* Align container to the right side */
+    top: 0; /* Start from the top */
+    width: 80px; /* Width of the container */
+    height: 100%; /* Full height */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally within the container */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background color for contrast */
+}
+
+.button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width of the container */
+}
